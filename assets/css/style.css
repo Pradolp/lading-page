@@ -171,32 +171,23 @@ a{
     object-fit: cover;
 }
 
-#top3-intro{
-    display: flex;
-    align-items: center;
-}
-.jobs-content{
+.top3-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    max-width: 70rem;
-}
-.jobs-content h1, 
-.jobs-content p{
-    line-height: 1.3;
-    letter-spacing: .1rem;
+    height: 100vh;
+    max-width: 64rem;
     text-align: center;
 }
-
-.jobs-content h1{
-    margin-bottom: 5rem;
-}
-
-.jobs-content p{
+.top3-content h1{
     margin-bottom: 3rem;
-    font-size: 2.3rem;
 }
+p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
 
 .grid{
     display: flex;
@@ -268,47 +259,37 @@ a{
     margin-top: 10rem;
 }
 
-#pricing{
-    display: flex;
-    align-content: center;
-}
-.jobs-content{
-    position: relative;
-    
-}
+
 .responsive-table{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    overflow-x:auto;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 
 table{
-    position: relative;
+    min-width: 36rem;
+    width: 100%;
     border-collapse: collapse;
-    min-width: 60rem;
-}
-table td, table th{
-    font-size: 1.8rem;
-    text-transform: capitalize;
-    padding: 2rem;
-    text-align: left;
-    border: 0.1rem solid var(--light-grey-color);
-}
-thead th{
-    font-weight: bold;
-}
-tfoot td, thead th{
-    background-color: var(--light-grey-color)
 }
 
 table caption{
-    font-style: italic;
-    font-size: 1.6rem;
     text-align: left;
+    font-style: italic;
     margin-bottom: 1rem;
 }
+table thead tr{
+    background-color: var(--light-grey-color);
+}
+table td, table th{
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-grey-color);
+}
+
+.tfoot{
+    background-color: var(--light-grey-color);
+    text-align: right;
+}
+
 .contact{
     display: flex;
     flex-direction: column;
@@ -422,9 +403,4 @@ table caption{
         flex-direction: column;
         justify-content: center;
     } */
-
-        
-    
-
-   
 }
